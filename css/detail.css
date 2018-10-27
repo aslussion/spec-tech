@@ -1,0 +1,123 @@
+.detailInfo {
+  padding: 30px 25px;
+  margin-bottom: 70px;
+}
+.nav-tabs {
+  border: 0;
+}
+.nav-tabs > li {
+  margin: 0;
+}
+.nav-tabs > li > a {
+  min-width: 180px;
+  margin-right: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 0 !important;
+  border-radius: 10px 10px 0 0;
+  background: #5A2D18;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.nav-tabs > li > a:hover,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  background: white;
+  color: #000;
+}
+.navTabContent {
+  margin-bottom: 35px;
+  padding: 10px 15px;
+  border-radius: 0 10px 10px 10px;
+  background: white;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+.brdLine {
+  border-top: 1px dashed;
+  padding: 9px 0;
+}
+.brdLine--large {
+  padding: 15px 0;
+}
+.detailLine {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.detailLine:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.detailLine:last-child {
+  padding-bottom: 0;
+}
+.detailLine-left {
+  font-weight: 700;
+  color: #5A2D18;
+}
+.detailLine-left--large {
+  font-weight: 500;
+  color: #3A3A3A;
+}
+.detailLine--large {
+  font-size: 18px;
+}
+.detailLine-f12 {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+}
+.detailLine-right--large {
+  font-weight: 700;
+}
+.detailLine-price {
+  font-weight: 700;
+  color: #5A2D18;
+}
+.detailSizes {
+  padding-left: 40px;
+  line-height: 30px;
+}
+/*телефон*/
+@media (max-width: 767px) {
+  .nav-tabs > li > a {
+    min-width: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 13px;
+  }
+  .detailInfo,
+  .navTabContent {
+    margin-bottom: 10px;
+  }
+  .detailLine {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .detailLine-left {
+    width: 100%;
+  }
+  .detailSizes {
+    padding: 25px 0 0;
+  }
+}
+/*no xs*/
+@media (min-width: 768px) {
+  .detailLine-left {
+    text-align: right;
+  }
+}
